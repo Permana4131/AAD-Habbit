@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/danautoba" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img"
+        android:layout_alignTop="@id/img"
+        android:layout_alignRight="@+id/img"
+        android:orientation="vertical"
+        android:layout_alignBottom="@id/img"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/worksans_bold"
+            android:layout_above="@+id/lokasi"
+            android:gravity="bottom"
+            android:text="Hello"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/lokasi"
+            android:fontFamily="@font/worksans_regular  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tessss"
+            android:gravity="bottom"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pariwisata.PariwisataFragment">
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:id="@+id/kKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/tKategori"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_regular"
+                android:text="Pilih Kategori : "
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:layout_toRightOf="@id/tKategori"
+                android:id="@+id/kategori"
+                style="?attr/spinnerDropDownItemStyle"
+                android:stateListAnimator="@drawable/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/dropdownListPreferredItemHeight" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/kKategori"
+                android:id="@+id/listPariwisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
