@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fishkuy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.FishKuy">
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Detailproduk"
+            android:exported="false" />
+        <activity
+            android:name=".Detailproduk2"
+            android:exported="false" />
+        <activity
+            android:name=".Detailproduk3"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPw1"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPw2"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPw3"
+            android:exported="false" />
+        <activity
+            android:name=".Homescreen"
+            android:exported="false" />
+        <activity
+            android:name=".Ikanlaut"
+            android:exported="false" />
+        <activity
+            android:name=".Ikantawar"
+            android:exported="false" />
+        <activity
+            android:name=".Keranjang"
+            android:exported="false" />
+        <activity
+            android:name=".Lacak"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Menubeli"
+            android:exported="false" />
+        <activity
+            android:name=".Menubeli2"
+            android:exported="false" />
+        <activity
+            android:name=".Menubeli3"
+            android:exported="false" />
+        <activity
+            android:name=".Menufaq"
+            android:exported="false" />
+        <activity
+            android:name=".Menulainnya"
+            android:exported="false" />
+        <activity
+            android:name=".Menutentangapk"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding1"
+            android:exported="false" />
+        <activity
+            android:name=".Onboarding2"
+            android:exported="false" />
+        <activity
+            android:name=".Pengirimanpembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Profile2"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Register2"
+            android:exported="false" />
+        <activity
+            android:name=".Register3"
+            android:exported="false" />
+        <activity
+            android:name=".Riwayat"
+            android:exported="false" />
+        <activity
+            android:name=".Riwayat2"
+            android:exported="false" />
+        <activity
+            android:name=".Seafood"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="false" />
+        <activity
+            android:name=".Transaksiberhasil"
+            android:exported="false" />
+        <activity
+            android:name=".Search2"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

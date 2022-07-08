@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="Homescreen2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/motif_atas">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/logo_atas" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="35dp"
+            android:onClick="keranjang"
+            android:src="@drawable/keranjang" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="35dp"
+            android:onClick="chat"
+            android:src="@drawable/pesan" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="35dp"
+            android:onClick="lacak"
+            android:src="@drawable/lacak"
+            tools:ignore="OnClick" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="412dp"
+        android:layout_height="238dp"
+        android:layout_marginTop="-25dp"
+        android:src="@drawable/banner" />
+
+    <ImageView
+        android:layout_width="415dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/bg_kategori"
+        android:src="@drawable/kategori_home" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/bg_kategori">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="ikanLaut"
+            android:src="@drawable/kategori_laut2" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:onClick="ikanTawar"
+            android:src="@drawable/kategori_tawar2" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/kategori_payau2" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="110dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="seafood"
+            android:src="@drawable/kategori_seafood2" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-11dp"
+        android:background="@drawable/resep_makanan">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="17dp"
+            android:src="@drawable/lihat_semua_resep" />
+
+    </RelativeLayout>
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner_resep2"
+        android:layout_marginTop="-18dp"
+        android:layout_marginStart="25dp"/>
+    -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-22dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bg_navigasi">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/nav_beranda" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/nav_feed" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/nav_tokosaya" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="18dp"
+                android:onClick="profile"
+                android:src="@drawable/nav_profile" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
